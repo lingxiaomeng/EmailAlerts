@@ -1,2 +1,2 @@
 # EmailAlerts
-java -jar EmailAlerts-1.0-SNAPSHOT-jar-with-dependencies.jar
+爬取教务系统成绩并发送邮件通知
