@@ -35,9 +35,6 @@ public class Main {
 
     private static LinkedHashMap<String, String> getdata(String username, String password) throws Exception {
         LinkedHashMap<String, String> gradedatas = new LinkedHashMap<>();
-        gradedatas.put("id", username);
-        gradedatas.put("password", password);
-
         Connection jwxt = Jsoup
                 .connect("http://jwxt.sustc.edu.cn/jsxsd/");// 获取连接
         jwxt.header("User-Agent",
