@@ -26,7 +26,8 @@ public class Main {
             for (Map.Entry<String, String> entry : data.entrySet()) {
                 if (!grades.containsKey(entry.getKey())) {
                     grades.put(entry.getKey(), entry.getValue());
-                    Email.sendEmail(entry.getKey() + " " + entry.getValue(), senderAddress, senderPassword);
+                    System.out.println(entry.getKey() + " " + entry.getValue());
+                       Email.sendEmail(entry.getKey() + " " + entry.getValue(), senderAddress, senderPassword);
                 }
             }
             Thread.sleep(1000 * 60 * 5);
